@@ -52,6 +52,5 @@ For more information, contact [Nick Timpano](mailto:nick.timpano@gmail.com)
 ├── tanzania_training_labels.csv
 ├── tanzania_training_values.csv
 ├── README.md
-├── tanzania_classification.ipynb
-└── Tanzania Waterpoints Presentation.pdf
+└── tanzania_classification.ipynb
 ```
