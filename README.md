@@ -17,12 +17,14 @@ The data was provided in three main files: training labels, training values and 
 - In order to build models to best identify waterpoints that need care, recall scores for the two in need classes ('functional needs repair' and 'non functional') were maximized. Thus, false negatives (missing waterpoints that need help) were minimized. 
 
 ## Results
-- XGBoost produced the strongest model in predicting operational status of waterpoints.    
+- XGBoost produced the strongest model in predicting operational status of waterpoints.      
 ![model comparison](./plots/model_comparison_radar.png)
 - The geography (`region`), installer (`installer`), age of the waterpoint (`construction_year`) and amount of water (`quantity_group`) all seem to have a relationship with `status_group`.  
-- Waterpoints installed by certain parties seem to have more issues. ![RWE Installed Waterpoints](./plots/installer_RWE_count_plot.png) 
-- These regions were predicted to have the highest concentrations of non functional waterpoints.![waterpoint predictions](./plots/map_waterpoints_predictions.png)
-- The majority of dry waterpoints are non-functional.\n
+- Waterpoints installed by certain parties seem to have more issues.  
+![RWE Installed Waterpoints](./plots/installer_RWE_count_plot.png) 
+- These regions were predicted to have the highest concentrations of non functional waterpoints.  
+![waterpoint predictions](./plots/map_waterpoints_predictions.png)
+- The majority of dry waterpoints are non-functional.  
 ![dry waterpoints](./plots/quantity_group_dry_plot.png)
 
 ## Conclusions 
