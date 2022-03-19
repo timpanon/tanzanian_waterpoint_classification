@@ -22,7 +22,8 @@ The data was provided in three main files: training labels, training values and 
 - The geography (`region`), installer (`installer`), age of the waterpoint (`construction_year`) and amount of water (`quantity_group`) all seem to have a relationship with `status_group`.  
 - Waterpoints installed by certain parties seem to have more issues. ![RWE Installed Waterpoints](./plots/installer_RWE_count_plot.png) 
 - These regions were predicted to have the highest concentrations of non functional waterpoints.![waterpoint predictions](./plots/map_waterpoints_predictions.png)
-- The majority of dry waterpoints are non-functional.![dry waterpoints](./plots/quantity_group_dry_plot.png)
+- The majority of dry waterpoints are non-functional.
+![dry waterpoints](./plots/quantity_group_dry_plot.png)
 
 ## Conclusions 
 Based on the model and the analysis of data, these were the findings and recommendations: 
