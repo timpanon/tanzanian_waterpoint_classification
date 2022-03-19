@@ -12,18 +12,17 @@ The data was provided in three main files: training labels, training values and 
 
 ## Methods/Techniques 
 - Three types of models were fitted: XGBoost, Random Forests, and Logistic Regression 
-- Due to the class imbalance (PICTURE), SMOTE oversampling was used  
+- Due to the class imbalance, SMOTE oversampling was used. 
+![status_group](./plots/labels_analysis.png)
 - In order to build models to best identify waterpoints that need care, recall scores for the two in need classes ('functional needs repair' and 'non functional') were maximized. Thus, false negatives (missing waterpoints that need help) were minimized. 
 
 ## Results
 - XGBoost produced the strongest model in predicting operational status of waterpoints.    
-![northern houses](./pictures/latitude_folium.png)
+![model comparison](./plots/model_comparison_radar.png)
 - The geography (`region`), installer (`installer`), age of the waterpoint (`construction_year`) and amount of water (`quantity_group`) all seem to have a relationship with `status_group`.  
-![correlation_with_price](./pictures/correlation_heatmap_02.png)
-- Waterpoints installed by certain parties seem to have more issues. ![price vs features](./pictures/correlation_with_price.png) 
-- These regions were predicted to have the highest concentrations of waterpoints that are in need. 
-- The majority of dry waterpoints are non-functional. 
-![model summary](./pictures/model_results.png)
+- Waterpoints installed by certain parties seem to have more issues. ![RWE Installed Waterpoints](./plots/installer_RWE_count_plot.png) 
+- These regions were predicted to have the highest concentrations of non functional waterpoints.![waterpoint predictions](./plots/map_waterpoints_predictions.png)
+- The majority of dry waterpoints are non-functional.![dry waterpoints](./plots/quantity_group_dry_plot.png)
 
 ## Conclusions 
 Based on the model and the analysis of data, these were the findings and recommendations: 
